@@ -1,59 +1,140 @@
-addEventListener('load', maintance_initial);
+addEventListener('load', maintance);
 
-var all_sec;
-var timerId;
+var mode;
 
-function maintance_initial()
+//для add
+var add_butt;
+
+//для dell
+var del_butt;
+
+//для edit
+var edit_butt;
+
+function maintance()
 {
-	all_sec = document.getElementById('time').innerHTML;
-	var arr = all_sec.split('.');
-	for(var i = 0; i < (arr.length - 1); i++)
-		arr[i] = parseInt(arr[i]);
+	//обработчик JS запросов в users
+	maintance_url = '/adminpage/maintance_form_handler';
 	
-	if(arr.length == 5){
-		arr[0] *= 86400;
-		arr[1] *= 3600;
-		arr[2] *= 60;
+	//установим запрашиваемое действие
+	if(window.location.pathname.split("/")[3] == 'add'){
+		mode = 'add';
+		add_butt = document.getElementById('add_maintance_button');
+		add_butt.onclick = add_butt_func;
 	}
-	else if(arr.length == 4){
-		arr[0] *= 3600;
-		arr[1] *= 60;
+	else if(window.location.pathname.split("/")[3] == 'del'){
+		mode = 'del';
+		del_butt = document.getElementById('del_butt_maintance');
+		del_butt.onclick = del_butt_func;
 	}
-	else if(arr.length == 3)
-		arr[0] *= 60;
-	
-	all_sec = 0;
-	for(var i = 0; i < (arr.length - 1); i++)
-		all_sec += arr[i];
-	
-	//наконец получили общее число оставшихся секунд
-	timerId = setInterval(time_func, 1000);
+	else if(window.location.pathname.split("/")[3] == 'edit'){
+		mode = 'edit';
+		edit_butt = document.getElementById('edit_butt_save');
+		edit_butt.onclick = edit_butt_func;
+	}
+	else
+		mode = 'main';
 }
 
-function time_func()
+
+//add
+//обработчик нажатия кнопки 
+function add_butt_func(e)
 {
-	var time_str = '';
-	var secs = all_sec--;
-	var days = parseInt(secs / 86400);
-	secs -= (days * 86400);
-	var hours = parseInt(secs/ 3600);
-	secs -= (hours * 3600);
-	var minutes = parseInt(secs / 60);
-	secs -= (minutes * 60);
-	var seconds = secs;
+	var inputs = document.getElementsByClassName('tab_input');
 	
-	if(days > 0)
-		time_str += days + ' дн. ';
-	if(hours > 0)
-		time_str += hours + ' ч. ';
-	if(minutes > 0)
-		time_str += minutes + ' мин. ';
-	if(seconds > 0)
-		time_str += seconds + ' сек. ';
+	//проверим что поля не пустые
+	for(var i = 0; i < inputs.length; i++){
+		if(inputs[i].innerHTML == ''){
+			inputs[i].style.border = "1px solid red";
+			inputs[i].blur = function bl(e){
+				e.target.style.border = "1px solid black";
+			}
+			return;
+		}
+	}
 	
-	//alert(time_str);
-	document.getElementById('time').innerHTML = time_str;
+	var result = confirm("Вы действительно хотите остановить работу службы доставки?");
+	if(result){
+		//отправляем информацию о добавляемом пользователе на сервер
+		var data = new FormData();
+		//установим переменную идентифицирующую ajax-запрос с сайта
+		data.append('ajax_pass', '688b76242871b8b69ec2175f65eb8c43');
+		data.append('add', '');
+		data.append('mt_header', inputs[0].innerHTML);
+		data.append('mt_description', inputs[1].innerHTML);
+		data.append('deadline', inputs[2].innerHTML);
 	
-	if(all_sec <= 0)
-		clearInterval(timerId);
+		var request = new XMLHttpRequest();
+		request.addEventListener('load', server_answer);
+		request.open("POST", maintance_url, true);
+		request.send(data);
+	}
+}
+
+
+//del
+//обработчик нажатия кнопки 
+function del_butt_func(e)
+{
+	var result = confirm("Вы действительно хотите удалить эту запись? *ВНИМАНИЕ:* удаление записи сделает службу доставки общедоступной");
+	if(result){
+		//отправляем информацию о добавляемом пользователе на сервер
+		var data = new FormData();
+		//установим переменную идентифицирующую ajax-запрос с сайта
+		data.append('ajax_pass', '688b76242871b8b69ec2175f65eb8c43');
+		data.append('del', '');
+	
+		var request = new XMLHttpRequest();
+		request.addEventListener('load', server_answer);
+		request.open("POST", maintance_url, true);
+		request.send(data);
+	}
+}
+
+
+//edit
+//обработчик нажатия кнопки 
+function edit_butt_func(e)
+{
+	var inputs = document.getElementsByClassName('td_edit');
+	
+	//проверим что поля не пустые
+	for(var i = 0; i < inputs.length; i++){
+		if(inputs[i].innerHTML == ''){
+			inputs[i].style.border = "1px solid red";
+			inputs[i].blur = function bl(e){
+				e.target.style.border = "1px solid black";
+			}
+			return;
+		}
+	}
+
+	var result = confirm("Вы действительно хотите сохранить изменения?");
+	if(result){
+		//отправляем информацию о добавляемом пользователе на сервер
+		var data = new FormData();
+		//установим переменную идентифицирующую ajax-запрос с сайта
+		data.append('ajax_pass', '688b76242871b8b69ec2175f65eb8c43');
+		data.append('edit', '');
+		data.append('mt_header', inputs[0].innerHTML);
+		data.append('mt_description', inputs[1].innerHTML);
+		data.append('deadline', inputs[2].innerHTML);
+	
+		var request = new XMLHttpRequest();
+		request.addEventListener('load', server_answer);
+		request.open("POST", maintance_url, true);
+		request.send(data);
+	}
+}
+
+
+//обработка информации от сервера
+function server_answer(e)
+{
+	var data = e.target;
+	if(data.status == 200){
+		alert(data.responseText);
+		window.location.href = '/adminpage/maintance';
+	}
 }

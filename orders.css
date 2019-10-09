@@ -1,0 +1,77 @@
+.empty {
+	clear: both;
+}
+
+.left_menu_button {
+	display: block;
+	background: gray;
+	text-align: center;
+	width: 75%;
+	margin: 20px auto;
+	padding: 10px 0;
+	font-size: 0.88em;
+	color: white;
+}
+
+.small_title {
+	width: 100%;
+	background: gray;
+	color: white;
+	border: 1px solid black;
+	text-align: center;
+	font-size: 1em;
+	padding: 10px 0;
+	float: left;
+	margin-top: 20px;
+}
+
+.orders_in_process {
+	width: 96%;
+	margin-left: 2%;
+	margin-top: 20px;
+}
+
+.header_tr {
+
+}
+
+.header_td {
+	border: 1px solid black;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 8px 5px;
+	background: gray;
+	color: white;
+	font-weight: bold;
+}
+
+.oip_td {
+	border: 1px solid black;
+	font-size: 0.9em;
+	padding: 10px 5px;
+}
+
+.done_buttons {
+	background: green;
+	color: white;
+	padding: 5px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+
+.del_buttons {
+	background: red;
+	color: white;
+	padding: 5px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+.buffer_del_buttons {
+	background: red;
+	color: white;
+	padding: 5px;
+	margin-left: 5px;
+	cursor: pointer;
+}

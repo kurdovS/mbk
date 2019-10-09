@@ -1,0 +1,66 @@
+.left_menu_button {
+	display: block;
+	background: gray;
+	text-align: center;
+	width: 75%;
+	margin: 20px auto;
+	padding: 10px 0;
+	font-size: 0.88em;
+	color: white;
+}
+
+.empty {
+	clear: both;
+}
+
+.small_title {
+	width: 100%;
+	background: gray;
+	color: white;
+	border: 1px solid black;
+	text-align: center;
+	font-size: 1em;
+	padding: 10px 0;
+	float: left;
+	margin-top: 20px;
+}
+
+.header_tr {
+}
+
+.header_td {
+	border: 1px solid black;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 8px 5px;
+	background: gray;
+	color: white;
+	font-weight: bold;
+}
+
+.client_td {
+	border: 1px solid black;
+	font-size: 0.9em;
+	padding: 10px 5px;
+}
+
+.clients_table {
+	width: 90%;
+	margin-left: 2%;
+	margin-top: 20px;
+	margin: 20px auto;
+}
+
+.clients_butt_td {
+	
+}
+
+.cl_butt {
+	background: green;
+	color: white;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 15px 0px;
+}
