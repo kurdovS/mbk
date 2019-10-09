@@ -1,0 +1,161 @@
+input {
+	border-radius: 0;
+}
+
+#footer {
+	width: 100%;
+	background: #353535;
+	color: white;
+	margin-top: 30px;
+}
+
+.hr_footer {
+	width: 90%;
+	margin: 20px auto;
+}
+
+.empty {
+	clear: both;
+}
+
+#footer_wrap {
+	max-width: 1200px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+#left_footer {
+	width: 40%;
+	padding: 2% 5%;
+	/*background: yellow;*/
+	float: left;
+}
+
+#info_pages {
+
+}
+
+.info {
+	/*background: blue;*/
+	width: 50%;
+	float: left;
+	margin-top: 20px;
+	font-size: 0.9em;
+}
+
+.info a {
+	color: white;
+	font-size: 1em;
+}
+
+#right_footer {
+	width: 40%;
+	padding: 2% 5%;
+	/*background: red;*/
+	float: right;
+}
+
+#phone_number {
+	font-size: 1.7em;
+	color: white;
+}
+
+.text_in_footer {
+	display: block;
+	margin-top: 15px;
+	font-size: 0.9em;
+}
+
+.copyright {
+	height: 40px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 0.9em;
+	
+}
+
+#social_icons_footer {
+	width: 100%;
+}
+
+.soc_icon {
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	float: left;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+
+.soc_icon:hover {
+	background: gray;
+	cursor: pointer;
+}
+
+#fb_i {
+	margin-left: 0px;
+}
+
+.soc_im {
+	width: 30px;
+	height: 30px;
+}
+
+/*-------------------for_tablet--------------------*/
+@media screen and (min-width: 768px) and (max-width: 1350px){
+#phone_number {
+	color: white;
+}
+
+#right_footer a {
+	color: white;
+	font-size: 1.1em;
+}
+
+#footer {
+
+}
+}
+
+/*--------------------for tablets-----------------*/
+@media screen and (min-width: 768px) and (max-width: 1350px) {
+.soc_icon {
+	margin-left: 8px;
+}
+}
+
+
+/*---------------------for mobile------------------*/
+@media screen and (max-width: 767px) {
+#right_footer a {
+	color: white;
+	font-size: 1.1em;
+}
+
+#left_footer {
+	width: 88%;
+	padding: 6%;
+	/*background: yellow;*/
+	padding-top: 3%;
+}
+#right_footer {
+	width: 88%;
+	padding: 6%;
+	padding-top: 6%;
+	/*background: pink;*/
+}
+
+.info {
+	/*background: blue;*/
+	width: 50%;
+	float: left;
+	margin-top: 20px;
+	font-size: 0.95em;
+	list-style: none;
+}
+
+.soc_icon {
+	margin-left: 6px;
+}
+}
