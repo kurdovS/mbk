@@ -1,0 +1,353 @@
+* {
+		margin: 0;
+		padding: 0;
+		font-family: Helvetica;
+		font-size: 14px;
+}
+
+#wrap {
+	max-width: 1050px;
+	/*background: gray;*/
+	margin: 0 auto;
+	margin-top: 20px;
+	z-index: 3;
+}
+
+.left_for_img {
+	width: 50%;
+	float: left;
+	/*background: blue;*/
+}
+
+.img_in_product {
+	width: 100%;
+}
+
+.meta_in_product {
+	width: 40%;
+	float: right;
+	/*background: yellow;*/
+	padding-left: 10%;
+	margin-top: 60px;
+}
+
+.name_in_product {
+	margin: 10px auto;
+	font-size: 1.7em;
+}
+
+.price_in_product {
+	margin: 0 auto;
+	color: #d50017;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+.description_in_product {
+	width: 70%;
+	padding: 20px 0;
+	font-size: 0.98em;
+	line-height: 1.2em;
+	/*background: yellow;*/
+	float: left;
+	margin-right: 30%;
+	color: #373737;
+}
+
+.description_in_product_for_mobile {
+	display: none;
+	color: #373737;
+}
+
+.volume_buttons {
+	/*background: pink;*/
+	height: 3em;
+	line-height: 1.7em;
+	margin-top: 0%;
+	display: inline-block;
+	clear: both;
+}
+
+.vol_buttons {
+	cursor: pointer;
+	float: left;
+	border: 2px solid #ffc836;
+	width: 28px;
+	height: 20px;
+	text-align: center;
+	margin: 0 4px;
+	border-radius: 3px;
+	font-size: 0.9em;
+	line-height: 1.6em;
+}
+
+.on {
+	background: #ffc836;
+	color: white;
+	font-weight: bold;
+}
+
+.over {
+	background: #ffc836;
+	color: white;
+	font-weight: bold;
+}
+
+.button_to_cart {
+	background: rgb(254, 130, 32);
+	box-shadow: rgb(150, 150, 150) 0px 1px 5px;
+	color: white;
+	padding: 8px;
+	border: 0px solid black;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: block;
+	cursor: pointer;
+}
+
+.like_buttons_block {
+	width: 100%;
+	margin-top: 30px;
+	/*background: yellow;*/
+	height: 30px;
+}
+
+/*---------кнопки нравится---------*/
+.fb_butt {
+	float: left;
+	margin-right: 10px;
+}
+
+.vk_butt {
+	margin-left: 10px;
+	float: left;
+}
+
+.ok_butt {
+	float: left;
+}
+
+#vk_like {
+}
+
+.fb-like {
+}
+
+
+.back_in_product {
+	display: inline-block;
+}
+
+#to_main_in_product {
+	
+}
+
+/*---------------ingredients_and_nutritions------------------*/
+.ingredients_and_nutritions {
+	clear: both;
+	/*background: pink;*/
+}
+
+.left_ingredients {
+	width: 50%;
+	/*background: green;*/
+	float: left;
+	text-align: left;
+}
+
+.left_ingredients_list {
+	width: 70%;
+}
+
+.right_nutritions {
+	width: 50%;
+	/*background: red;*/
+	float: right;
+	text-align: left;
+}
+
+.ri_text {
+	font-size: 0.8em;
+	margin-top: 10px;
+	padding-left: 10px;
+}
+
+.empty {
+	clear: both;
+}
+
+.ingnut {
+	/*text-align: center;*/
+}
+
+.ingnut h2 {
+	display: block;
+	width: 80%;
+	height: 2em;
+	margin: 0 auto;
+	line-height: 1.8em;
+	text-align: center;
+	/*background: #d50017;
+	color: white;*/
+	/*background: yellow;*/
+	margin-top: 20px;
+	margin-bottom: 50px;
+	font-weight: normal;
+	font-size: 1.2em;
+}
+
+
+td {
+	border: 1px solid black;
+	padding: 5px;
+}
+
+table {
+	width: 100%;
+}
+
+.f {
+	width: 70%;
+}
+
+.f_td {
+	border: 0;
+}
+
+.s {
+	width: 15%;
+}
+
+.t {
+	width: 15%;
+}
+
+
+/*----------------for tablets----------------*/
+@media screen and (min-width: 768px) and (max-width: 1350px){
+#wrap {
+	width: 90%;
+}
+
+.description_in_product {
+	width: 90%;
+	color: #777777;
+}
+
+.vol_buttons {
+	width: 30px;
+	height: 21px;
+}
+}
+
+
+/*----------------for mobile----------------*/
+@media screen and (max-width: 767px){
+.back_in_product {
+	display: inline-block;
+	margin-left: 6%;
+}	
+	
+.left_for_img {
+	float: left;
+	width: 90%;
+	margin: 0 auto;
+	margin-left: 5%;
+}
+
+.meta_in_product {
+	width: 60%;
+	/*background: yellow;*/
+	float: left;
+	text-align: center;
+	padding: 0 20%;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+.name_in_product {
+	
+}
+
+.price_in_product {
+	margin: 0 15px;
+	font-size: 1.5em;
+}
+
+.button_to_cart {
+	background: rgb(254, 130, 32);
+	box-shadow: rgb(150, 150, 150) 0px 1px 5px;
+	color: white;
+	padding: 10px 12px;
+	border: 0px solid black;
+	font-weight: bold;
+	font-size: 1.1em;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+.like_buttons_block {
+	margin-left: 20%;
+}
+
+.fb_butt {
+	display: none;
+}
+
+.description_in_product {
+	display: none;
+}
+
+.description_in_product_for_mobile {
+	display: block;
+	width: 80%;
+	padding: 7% 10%;
+	clear: both;
+	background: gray;
+	color: white;
+}
+
+.volume_buttons {
+	margin-top: 10%;
+	cursor: pointer;
+}
+
+.vol_buttons {
+	float: left;
+	border: 2px solid #ffc836;
+	width: 30px;
+	height: 22px;
+	text-align: center;
+	margin: 0 4px;
+	border-radius: 3px;
+	line-height: 1.8em;
+}
+
+.left_ingredients {
+	clear: both;
+	width: 90%;
+	padding: 5%;
+}
+
+.right_nutritions {
+	clear: both;
+	width: 90%;
+	padding: 5%;
+}
+
+.ingnut h2 {
+	text-align: center;
+	/*background: yellow;*/
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-weight: normal;
+	font-size: 1.4em;
+}
+
+table {
+	width: 100%;
+}
+}

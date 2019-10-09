@@ -1,0 +1,98 @@
+#wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#maintance_table {
+	margin: 0px auto;
+	padding: 30px;
+	box-shadow: rgb(150, 150, 150) 1px 0px 2px 2px;
+	text-align: center;
+	width: 70%;
+	min-height: 500px;
+	clear: both;
+	box-sizing: border-box;
+}
+
+#maintance_table a {
+	text-decoration: underline;
+	font-style: italic;
+	font-size: 1em;
+	color: #0000ff;
+}
+
+#maintance_table a:visited {
+	color: #4B0082;
+}
+
+#mt_header {
+	margin-top: 30px;
+	font-size: 3em;
+}
+
+#mt_description {
+	width: 90%;
+	margin: 0 auto;
+	background: white;
+	margin-top: 40px;
+	text-align: left;
+	font-size: 1.2em;
+	line-height: 1.4;
+}
+
+#clock {
+	background: white;
+	margin-top: 50px;
+	font-size: 3em;
+	font-weight: bold;
+}
+
+#clock_text {
+	font-size: 0.6em;
+	font-weight: normal;
+	margin-bottom: 20px;
+	
+}
+
+#time {
+	background: white;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+#left_rope {
+	width: 3px;
+	height: 50px;
+	background: black;
+	margin-left: 25%;
+	float: left;
+}
+
+#right_rope {
+	float: right;
+	width: 3px;
+	height: 50px;
+	background: black;
+	margin-right: 25%;
+}
+
+/*------------------------------mobile---------------------*/
+@media screen and (max-width: 767px){
+
+#maintance_table {
+	width: 90%;
+	padding: 15px;
+}
+
+#time {
+	font-size: 0.5em;
+}
+
+#clock_text {
+	font-size: 0.48em;
+}
+
+#mt_header {
+	font-size: 2em;
+}
+}
