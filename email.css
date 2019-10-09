@@ -1,0 +1,186 @@
+#email_block {
+	background: #353535;
+	width: 100%;
+	margin-bottom: 0px;
+}
+
+.email_block_zero {
+	height: 170px;
+	padding: 30px 0;
+}
+
+.email_block_first {
+	height: 70px;
+	padding: 0;
+}
+
+.email_block_second {
+	height: 0px;
+	padding: 0px;
+}
+
+.anim_eb {
+	transition-property: height;
+	transition-duration: .8s;
+	transition-timing-function: ease;
+}
+
+#email_wrap {
+	text-align: center;
+	max-width: 1050px;
+	margin: 0 auto;
+	/*background: green;*/
+	width: 90%;
+}
+
+#email_wrap h2 {
+	/*background: red;*/
+	color: white;
+	font-size: 1.8em;
+	padding: 20px 0;
+}
+
+#bottom_email span {
+	color: white;
+	font-size: 1.1em;
+	margin-right: 30px;
+	display: block;
+	float: left;
+	margin-left: 10%;
+	/*background: brown;*/
+	line-height: 2.8em;
+}
+
+#bottom_email input {
+	width: 30%;
+	height: 40px;
+	padding: 0 10px;
+	float: left;
+	border-left: 2px solid white;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	border-right: 0px;
+}
+#email_button {
+	height: 40px;
+	width: 10%;
+	background: white;
+	float: left;
+	border-right: 2px solid white;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	line-height: 2.8em;
+	padding: 0 10px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.empty {
+	clear: both;
+	margin-bottom: 20px;
+}
+
+
+
+/*----------------for tablets----------------*/
+@media screen and (min-width: 768px) and (max-width: 1350px){
+#bottom_email {
+	width: 100%;
+}	
+	
+#bottom_email input {
+	width: 60%;
+	margin-left: 10%;
+}
+
+#bottom_email span {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+}
+
+#email_button {
+	width: 16%;
+}
+
+input {
+	border-radius: 0px;
+}
+}
+
+/*---------------------for mobile------------------*/
+@media screen and (max-width: 767px) {
+#email_block {
+	background: transparent;
+	width: 100%;
+	padding: 10px 0;
+	margin-top: 10px;
+}	
+
+#bottom_email {
+	border-top: 2px solid lightgray;
+	border-bottom: 2px solid lightgray;
+	background: #fcfcfc;
+	width: 90%;
+	padding: 10px 5%;
+}
+	
+#bottom_email span {
+	color: #343434;
+	font-size: 0.9em;
+	margin-right: 0px;
+	display: block;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	text-align: center;
+	/*background: brown;*/
+	line-height: 1.5em;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	font-weight: bold;
+}	
+	
+#bottom_email input {
+	width: 58%;
+	height: 40px;
+	padding: 0;
+	float: left;
+	border-left: 2px solid lightgray;
+	border-top: 2px solid lightgray;
+	border-bottom: 2px solid lightgray;
+	border-right: 0px;
+}
+#email_button {
+	height: 40px;
+	width: 32%;
+	background: #d50017;
+	float: left;
+	border-right: 2px solid lightgray;
+	border-top: 2px solid lightgray;
+	border-bottom: 2px solid lightgray;
+	line-height: 3.2em;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+
+#email_wrap h2 {
+	background: white;
+	color: #434343;
+	font-size: 1.3em;
+	padding-top: 0px;
+}
+
+.email_block_zero {
+	height: 200px;
+	padding: 30px 0;
+}
+
+.email_block_first {
+	height: 70px;
+	padding: 0;
+}
+}

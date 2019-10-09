@@ -1,0 +1,123 @@
+#advantages {
+	padding-top: 40px;
+	max-width: 1050px;
+	margin: 0 auto;
+	width: 100%;
+	/*background: green;*/
+}
+
+#advant_description {
+	margin: 0 auto;
+	width: 70%;
+	text-align: center;
+	font-size: 0.89em;
+	line-height: 1.7em;
+	margin-bottom: 20px;
+}
+
+#advant_description_h2 {
+	color: #d50017;
+	margin-bottom: 20px;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.one_cell {
+	width: 33.3333333333%;
+	float: left;
+	/*background: pink;*/
+	padding: 2% 4%;
+	box-sizing: border-box;
+}
+
+.cell_hr {
+	display: none
+}
+
+.advant_icon {
+	display: block;
+	width: 10%;
+	min-width: 22px;
+	margin-left: 45%;
+	margin-bottom: 5%;
+}
+
+.advant_h {
+	text-align: center;
+	margin-bottom: 5%;
+	color: #d50017;
+}
+
+.advant_span {
+	text-align: left;
+	font-size: 0.88em;
+	line-height: 1.2em;
+}
+
+.clear_box {
+	clear: both;
+}
+
+
+/*---------------------for mobile------------------*/
+@media screen and (max-width: 750px) {
+#advantages {
+	padding-top: 0px;
+	margin: 0 auto;
+	width: 100%;
+	/*background: blue;*/
+}
+
+.one_cell {
+	width: 100%;
+	/*background: pink;*/
+	padding: 2% 10%;
+	box-sizing: border-box;
+}
+
+.one_row {
+	display: none;
+}
+
+#advant_description_h2 {
+	color: #434343;
+}
+
+.advant_icon {
+	float: left;
+	width: 10%;
+	min-width: 22px;
+	margin-left: 10%;
+	margin-right: 5%;
+	margin-bottom: 5%;
+}
+
+.advant_h {
+	font-size: 1.03em;
+	text-align: left;
+	margin-left: 20%;
+	margin-bottom: 5%;
+	line-height: 2em;
+}
+
+.advant_span {
+	display: none;
+}
+
+.cell_hr {
+	display: none;
+	width: 100%;
+	height: 0px;
+	border: 0px;
+}
+
+#advant_description {
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	font-size: 0.89em;
+	line-height: 1.7em;
+	margin-bottom: 30px;
+	color: #232323;
+}
+}

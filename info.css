@@ -1,231 +1,26 @@
-.left_menu_button {
-	display: block;
-	background: gray;
-	text-align: center;
-	width: 75%;
-	margin: 20px auto;
-	padding: 10px 0;
-	font-size: 0.88em;
-	color: white;
+.empty {
+	clear: both;
 }
 
-.small_title {
-	width: 100%;
-	background: gray;
-	color: white;
-	border: 1px solid black;
-	text-align: center;
-	font-size: 1em;
-	padding: 10px 0;
-	float: left;
-}
-
-#info_pages {
-	margin-top: 30px;
-	margin-bottom: 20px;
-}
-
-.info_table {
-	width: 80%;
-	float: left;
-	margin-top: 30px;
-	margin-left: 40px;
-	margin-bottom: 15px;
-	table-layout: fixed;
-}
-
-.info_table_tr {
-	background: gray;
-	height: 3em;
-	text-align: center;
-}
-
-.info_table_title_td {
-	border: 1px solid black;
-	empty-cells: hide;
-	color: white;
-}
-
-.info_table_regular_td {
-	border: 1px solid black;
-	padding: 5px 1px 5px 5px;
-}
-
-.info_table_regular_td_l {
-	border: 0px solid black;
-	padding: 5px 1px 5px 5px;
-}
-
-.at_div {
-	max-height: 70px;
-	overflow-y: auto;
-}
-
-td ::-webkit-scrollbar{
-   width: 4px;
-}
-
-#pages_butt {
-	/*background: yellow;*/
-	float: left;
-	width: 80%;
-	margin-left: 20px;
-	margin-top: 20px;
-	margin-bottom: 30px;
-}
-
-.unp_pages_butt {
-	float: left;
-	height: 25px;
-	width: 25px;
-	background: gray;
-	color: white;
-	margin-left: 10px;
-	margin-top: 10px;
-	text-align: center;
-	line-height: 2em;
-	cursor: pointer;
-}
-
-.p_pages_butt {
-	float: left;
-	height: 25px;
-	width: 25px;
-	background: gray;
-	color: white;
-	margin-left: 10px;
-	margin-top: 10px;
-	text-align: center;
-	line-height: 2em;
-	cursor: pointer;
-}
-
-
-/*--------edit_info-----------*/
-.edit_info {
-	float: left;
-	background: blue;
-	color: white;
-	text-align: center;
-	padding: 5px;
-	font-size: 0.85em;
-	margin-left: 10px;
-	cursor: pointer;
-}
-
-
-/*---------del_info----------*/
-.del_info {
-	float: left;
-	background: #d50017;
-	color: white;
-	text-align: center;
-	padding: 5px;
-	font-size: 0.85em;
-	margin-left: 10px;
-	cursor: pointer;
-}
-
-
-
-/*---------add_articles-----------*/
-#right_page_inner {
-	background: silver;
-	box-sizing: border-box;
-	padding: 20px 50px;
-}
-
-#edit_area {
-	border: 1px solid black;
-	min-height: 400px;
-	width: 100%;
-	background: white;
-}
-
-#edit_block {
-	float: left;
-	width: 58%;
-	margin-left: 2%;
-	margin-right: 5%;
-	margin-top: 20px;
-}
-
-#buttons_block {
-	float: left;
-	width: 30%;
-	box-sizing: border-box;
-	min-height: 600px;
-	margin-right: 5%;
-	margin-top: 20px;
-	border: 1px solid black;
-}
-
-#edit_text {
-	width: 100%;
-	height: 600px;
-	border: 1px solid black;
-	box-sizing: border-box;
-	padding: 10px 10px;
-}
-
-.edit_block_input {
-	width: 100%;
-	height: 3em;
-	padding: 5px;
-	box-sizing: border-box;
-	border: 1px solid black;
-	margin-bottom: 30px;
-	font-weight: bold;
-	text-align: center;
-}
-
-.small_title_add {
-	width: 100%;
-	background: gray;
-	color: white;
-	font-weight: bold;
-	border: 1px solid black;
-	text-align: center;
-	font-size: 1em;
-	padding: 10px 0;
-	box-sizing: border-box;
-	float: left;
-}
-
-#viewing_area {
-	border: 1px solid black;
-	min-height: 700px;
-	width: 100%;
-	background: white;
-	margin-top: 40px;
+#wrap {
+	width: 1050px;
+	margin: 0 auto;
 }
 
 #info_view {
 	width: 1050px;
 	margin: 0 auto;
-	margin-top: 40px;
+	margin-top: 10px;
 	background: white;
 	min-height: 600px;
 	box-sizing: border-box;
 	padding: 20px 40px;
 	font-size: 14px;
-	overflow: hidden;
 	border: 1px dashed gray;
-	/*border: 1px solid black;*/
+	overflow: hidden;
+	/*box-shadow: rgb(150, 150, 150) 0px 1px 5px;*/
 }
 
-.bb_buttons {
-	background: gray;
-	border: 1px solid black;
-	color: white;
-	float: left;
-	padding: 10px 8px;
-	margin: 15px 10px;
-	cursor: pointer;
-}
-
-/*---------------ФОРМАТИРОВАНИЕ ДЛЯ ОТОБРАЖЕНИЯ СТАТЬИ---------------*/
-/*---------------то же самое должно быть и в представлении статей---------------*/
 #info_head {
 	text-align: center;
 	font-size: 18px;
@@ -241,17 +36,12 @@ td ::-webkit-scrollbar{
 	font-weight: normal;
 }
 
-img {
-	max-width: 100%;
-	border: 1px solid black;
-}
 
 .img_wrap {
+	max-width: 100%;
 	margin: 0 auto;
-	display: inline-block;
 	margin-top: 10px;
 	margin-bottom: 20px;
-	background: yellow;
 }
 
 .img_span {
@@ -266,25 +56,151 @@ p {
 	line-height: 1.5em;
 }
 
-.drop_imgs {
-	max-height: 40%;
-	max-width: 26%;
-	margin: 10px;
+.info_meta {
+	/*background: yellow;*/
+	height: 15px;
+	width: 100%;
+	
 }
 
-.img_text {
+.meta_in_info {
+	height: 15px;
+	float: left;
+/*	background: yellow;*/
+	margin-left: 10px;
+}
+
+.info_met_txt {
+	font-size: 0.88em;
+	float: left;
+}
+
+.meta_in_article img {
+	max-height: 100%;
+	margin: 0px 5px;
+	float: left;
+}
+
+#back_to_main {
+	/*background: yellow;*/
+	margin-top: 20px;
+	margin-bottom: 10px;
+	display: inline-block;
+	font-size: 0.9em;
+}
+
+#map {
+	width: 60%;
+	height: 440px;
+	float: left;
+	box-shadow: rgb(150, 150, 150) 0px 1px 5px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+
+
+/*----------------for tablets----------------*/
+@media screen and (min-width: 751px) and (max-width: 1350px){
+#info_view {
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 0px;
+	background: white;
+	min-height: 300px;
+	box-sizing: border-box;
+	padding: 20px 5%;
+	font-size: 14px;
+	border: 0px dashed gray;
+	/*box-shadow: rgb(150, 150, 150) 0px 1px 5px;*/
+}
+
+#info_head {
 	width: 100%;
 	text-align: center;
-	margin: 10px 0;
-	margin-top: 0;
-	background: yellow;
+	font-size: 18px;
+	/*background: yellow;*/
+	margin-bottom: 20px;
 }
 
-#imgs_drop {
-	width: 90%;
-	height: 300px;
-	box-sizing: border-box;
+#wrap {
+	width: 100%;
 	margin: 0 auto;
-	border: 1px solid black;
-	overflow: auto;
+	box-sizing: border-box;
+}	
+
+#back_to_main {
+	margin-left: 5%;
+/*	background: yellow;*/
+	margin-top: 10px;
+	display: inline-block;
+	font-size: 0.9em;
+}
+}
+/*---------------------for mobile------------------*/
+@media screen and (max-width: 750px) {
+#wrap {
+	width: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+}	
+	
+#info_view {
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 0px;
+	background: white;
+	min-height: 300px;
+	box-sizing: border-box;
+	padding: 20px 5%;
+	font-size: 14px;
+	border: 0px dashed gray;
+	/*box-shadow: rgb(150, 150, 150) 0px 1px 5px;*/
+}
+
+#info_head {
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	/*background: yellow;*/
+	margin-bottom: 20px;
+}
+
+.info_met_txt {
+	font-size: 0.88em;
+	float: left;
+}
+
+.info_meta {
+	/*background: yellow;*/
+	height: 15px;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.info_in_article {
+	height: 15px;
+	float: left;
+/*	background: yellow;*/
+	
+}
+
+.info_in_article img {
+	max-height: 100%;
+	margin: 0px 0px;
+	margin-right: 5px;
+	float: left;
+}
+
+#back_to_main {
+	margin-left: 15px;
+	/*background: yellow;*/
+	margin-top: 10px;
+	display: inline-block;
+	font-size: 0.9em;
+}
+
+#map {
+	height: 200px;
+}
 }

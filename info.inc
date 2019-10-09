@@ -1,41 +1,32 @@
 <?php
-function info($info_func)
-{
-	switch($info_func)
-	{
-	case 'main':
-		require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/for_adminpage/info/info_services/main_info.php');
-		$info_func = main_info();
-		break;
-	case 'add':
-		require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/for_adminpage/info/info_services/add_info.php');
-		$info_func = add_info();
-		break;
-	case 'del':
-		require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/for_adminpage/info/info_services/del_info.php');
-		$info_func = del_info();
-		break;
-	case 'edit':
-		require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/for_adminpage/info/info_services/edit_info.php');
-		$info_func = edit_info();
-		break;
-	default:
-		require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/for_adminpage/info/info_services/main_info.php');
-		$info_func = main_info();
-		break;
-	}
+$title = '';
+function info($brand, $page)
+{	
+	//подключение к БД
+	require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/for_all/db_connection.inc');
+	$db = connectionDB();
 	
-	$page = '
-<div id="left_menu">
-	<a href="/adminpage/info"><div class="left_menu_button">Главная</div></a>
-	<a href="/adminpage/info/add"><div class="left_menu_button">Добавить</div></a>
-	<a href="/adminpage/info/del"><div class="left_menu_button">Удалить</div></a>
-	<a href="/adminpage/info/edit"><div class="left_menu_button">Редактировать</div></a>
-</div>
-<div id="right_page">' 
-	. $info_func . '
-</div>';
+	//получим всю информацию о статье
+	$query = 'SELECT * FROM `info_pages` WHERE title_translit="' . $page . '"';
+	$res = mysqli_query($db, $query);
+	$info = mysqli_fetch_assoc($res);
+	mysqli_close($db);
+	
+	$info = '
+<div id="wrap">
+	<a href="/' . $brand . '"><div id="back_to_main">&larr; На главную</div></a>
+	<div id="info_view">
+		<h1 id="info_head">' . $info['title'] . '</h2>'
+		. $info['text'] . '
+	</div>';
 
-	return $page;
+	//заменим jpg/jpeg/png на webp если поддерживается браузером
+	require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/for_all/images_to_webp.inc');
+	if(isBrowserWebpSupport())
+		imagesToWebp($info);
+
+	$info .= '<a href="/' . $brand . '"><div id="back_to_main">&larr; На главную</div></a></div>';
+
+	return $info;
 }
 ?>

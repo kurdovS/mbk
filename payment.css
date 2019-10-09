@@ -1,0 +1,276 @@
+#wrap {
+	width: 90%;
+	max-width: 1050px;
+	margin: 0 auto;
+	color: #333333;
+}
+
+.empty {
+	clear: both;
+}
+
+.back_in_order {
+	margin: 20px 0;
+}
+
+#order_info_payment {
+	width: 100%;
+}
+
+.payment_h3 {
+	color: red;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+.payment_info_block {
+	border: 1px solid #d2d2d2;
+	margin-top: 10px;
+	margin-right: 15px;
+	width: 25%;
+	padding: 10px;
+	float: left;
+	font-size: 0.9em;
+	line-height: 1.5em;
+}
+
+.pib_span {
+	font-size: 0.99em;
+	font-weight: bold;
+}
+
+.pib_sp {
+	display: block;
+	width: 100%;
+	/*background: yellow;*/
+	font-size: 0.95em;
+	color: gray;
+	line-height: 1.8em;
+}
+
+.pib_sp_div {
+	float: right;
+	font-size: 0.95em;
+	color: black;
+}
+
+.pib_sp_d {
+	float: right;
+	font-weight: bold;
+	color: black;
+}
+
+.pib_hr {
+	margin: 10px 0;
+
+}
+
+#payment_method {
+	width: 100%;
+}
+
+.payment_method_block {
+	float: left;
+	width: 45%;
+	height: 20px;
+	padding: 20px 35px 20px 35px;
+	border: 1px solid #d2d2d2;
+	margin-bottom: 15px;
+	color: #d2d2d2;
+	font-size: 0.9em;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.anim_mb {
+	transition-property: height;
+	transition-duration: .3s;
+	transition-timing-function: ease;
+}
+
+.payment_method_block:hover {
+	border: 1px solid gray;
+}
+
+.payment_method_desc {
+	display: none;
+	float: right;
+	width: 40%;
+	font-size: 0.9em;
+}
+
+.round_payment {
+	width: 9px;
+	height: 9px;
+	border: 2px solid #d2d2d2;
+	/*border-radius: 10px;*/
+	padding: 2px;
+	float: left;
+	margin-right: 15px;
+}
+
+.rp_in {
+	width: 100%;
+	height: 100%;
+	background: white;
+	/*border-radius: 10px;*/
+}
+
+.small_pmb_span {
+	font-size: 0.88em;
+	display: none;
+}
+
+#with_card_online {
+	height: 20px;
+}
+
+/*-------------классы для выбранного метода оплаты----------*/
+.ch {
+	color: black;
+	padding: 15px 35px 20px 35px;
+	height: 80px;
+}
+
+.checked {
+	border: 2px solid black;
+	margin-top: 5px;
+}
+
+.check {
+	background: black;
+}
+
+
+#with_cash_bottom {
+	width: 100%;
+	/*background: yellow;*/
+	display: none;
+	margin-top: 20px;
+}
+
+.with_cash_bottom_span {
+	display: block;
+	float: left;
+	/*background: pink;*/
+	line-height: 2em;
+	font-size: 0.9em;
+}
+
+#payment_input {
+	display: block;
+	float: left;
+	width: 70px;
+	height: 25px;
+	margin-left: 20px;
+	padding-left: 5px;
+}
+
+#without_change {
+	margin-left: 30px;
+	margin-top: 5px;
+	border: 2px solid black;
+}
+
+.to_pay_button {
+	background: rgb(254, 130, 32);
+	box-shadow: rgb(150, 150, 150) 0px 1px 5px;
+	font-weight: bold;
+	float: right;
+	padding: 10px;
+	width: 150px;
+	height: 30px;
+	color: white;
+	text-align: center;
+	line-height: 2em;
+}
+
+
+
+
+/*----------------for tablets----------------*/
+@media screen and (min-width: 768px) and (max-width: 1350px){
+.payment_info_block {
+	width: 30%;
+}
+
+#without_change {
+	margin-left: 0;
+}
+
+#payment_input {
+	margin-left: 15px;
+	padding-left: 5px;
+}
+}
+
+
+
+/*------------------for_mobile-------------------*/
+@media screen and (max-width: 767px) {
+#order_info_payment {
+	width: 100%;
+	/*background: pink;*/
+}	
+	
+.payment_info_block {
+	border: 0px solid #d2d2d2;
+	margin-top: 10px;
+	margin-right: 0;
+	width: 100%;
+	padding: 0;
+	float: left;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	margin-bottom: 10px;
+	/*background: silver;*/
+}
+
+.pib_sp {
+	display: block;
+	width: 100%;
+	/*background: yellow;*/
+	font-size: 0.9em;
+	color: gray;
+	margin-bottom: 1em;
+	line-height: 1.4em;
+}
+
+b {
+	font-size: 0.9em;
+}
+
+.payment_h3 {
+	color: red;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.payment_method_block {
+	float: left;
+	width: 80%;
+	
+	padding: 20px 35px 20px 35px;
+	border: 1px solid #d2d2d2;
+	margin-bottom: 15px;
+	color: gray;
+	font-size: 0.9em;
+	overflow: hidden;
+}
+
+.payment_method_desc {
+	display: none;
+	float: right;
+	width: 95%;
+	font-size: 0.9em;
+	margin-bottom: 30px;
+}
+
+.ch {
+	height: 96px;
+}
+
+#with_card_online {
+	height: 34px;
+}
+}

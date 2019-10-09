@@ -1,0 +1,37 @@
+#wrap {
+	width: 90%;
+	max-width: 1050px;
+	margin: 0 auto;
+	color: #333333;
+	/*background: yellow;*/
+}
+
+.back_in_order {
+	margin: 20px 0;
+	margin-bottom: 50px;
+}
+
+#congrat {
+	text-align: center;
+	font-size: 2.8em;
+	font-weight: bold;
+	margin-bottom: 20px;
+/*	background: pink;*/
+}
+
+#congrat_desc {
+	/*background: green;*/
+	width: 90%;
+	margin: 10px auto;
+	text-align: center;
+}
+
+#back_to_shop {
+	box-shadow: rgb(150, 150, 150) 0px 1px 5px;
+	margin: 40px auto;
+	padding: 10px 5px;
+	color: white;
+	background: rgb(254, 130, 32);
+	width: 150px;
+	text-align: center;
+}

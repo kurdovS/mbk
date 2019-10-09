@@ -1,0 +1,401 @@
+#err_mes {
+	font-size: 0.9em;
+	color: red;
+	background: white;
+	box-sizing: border-box;
+	border: 1px solid red;
+	padding: 20px;
+	margin-top: 30px;
+	display: none;
+}
+
+#wrap {
+	width: 90%;
+	max-width: 1050px;
+	margin: 0 auto;
+}
+
+.delivery_h3 {
+	color: red;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+.round_delivery {
+	width: 9px;
+	height: 9px;
+	border: 2px solid #d2d2d2;
+	/*border-radius: 10px;*/
+	padding: 2px;
+	float: left;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+.checked {
+	border: 2px solid black;
+}
+
+.check {
+	background: black;
+}
+
+.rd_in {
+	width: 100%;
+	height: 100%;
+	/*border-radius: 10px;*/
+}
+
+.back_in_order {
+	margin: 20px 0;
+}
+
+.delivery_input {
+	width: 33.333%;
+	float: left;
+	/*background: brown;*/
+}
+
+.delivery_switch {
+	width: 33.333%;
+	float: left;
+	/*background: green;*/
+}
+
+#dont_call_info {
+	width: 140px;
+	padding: 7px;
+	position: absolute;
+	margin-left: 130px;
+	font-size: 0.88em;
+	background: #515c6b;
+	opacity: 0.9;
+	color: white;
+	box-shadow: rgb(150, 150, 150) 0px 1px 5px;
+	display: none;
+}
+
+#deliv_time {
+	width: 33.333%;
+	float: left;
+	/*background: gold;*/
+}
+
+#deliv_time_label {
+	margin-top: 20px;
+	display: block;
+	width: 80%;
+}
+
+i {
+	color: gray;
+	font-size: 0.9em;
+}
+
+#contact_data {
+	background: transparent;
+}
+
+#contact_data label {
+	display: block;
+}
+
+#dont_call_label {
+	width: 30%;
+	float: left;
+}
+
+.anim_sf {
+	transition-property: height;
+	transition-duration: .3s;
+	transition-timing-function: ease;
+}
+
+.side_addr {
+	width: 50%;
+	float: left;
+}
+
+.input_in_order {
+	margin-top: 10px;
+	height: 2em;
+	width: 78%;
+	padding-left: 2%;
+}
+
+#time_input {
+	margin-top: 10px;
+	height: 2em;
+	width: 78%;
+	padding-left: 2%;
+}
+
+.input_in_address {
+	width: 98%;
+	padding-left: 2%;
+	margin: 0 auto;
+	margin-top: 10px;
+	height: 2em;
+}
+
+.small_delivery_block {
+	width: 33.333%;
+	float: left;
+	margin-top: 20px;
+	/*text-align: center;*/
+}
+
+.small_delivery_block label {
+	display: block;
+}
+
+.small_input {
+	margin: 0 auto;
+	width: 96%;
+	padding-left: 4%;
+	margin-top: 10px;
+	height: 2em;
+}
+
+#right_addr {
+	width: 46%;
+	padding: 0 2%;
+	/*background: yellow;*/
+}
+
+.empty {
+	clear: both;
+}
+
+.order_addr_desc {
+	width: 100%;
+	/*text-align: center;*/
+	display: block;
+}
+
+#map {
+	width: 100%;
+	height: 400px;
+	box-shadow: rgba(0,0,0,0.3) 2px 2px 10px 0px;
+	margin-top: 10px;
+}
+
+.to_pay_button {
+	background: rgb(254, 130, 32);
+	box-shadow: rgb(150, 150, 150) 0px 1px 5px;
+	font-weight: bold;
+	width: 200px;
+	color: white;
+	margin: 20px auto;
+	display: none;
+	text-align: center;
+	padding: 15px;
+	cursor: pointer;
+}
+
+/*-------sms_verify---------*/
+#sms_verify {
+	position: absolute;
+	background: transparent;
+	float: left;
+	margin-top: 20px;
+	display: none;
+}
+
+#clock_small {
+	float: left;
+	margin-left: 8px;
+	margin-top: 8px;
+}
+
+#sms_verify label {
+	margin-bottom: 10px;
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+
+#sms_input {
+	width: 50px;
+	height: 2em;
+	padding: 0 5px;
+	float: left;
+}
+
+#sms_button {
+	padding: 7px;
+	background: rgb(254, 130, 32);
+	box-shadow: rgb(150, 150, 150) 0px 1px 5px;
+	font-weight: bold;
+	color: white;
+	float: left;
+	margin-left: 10px;
+	border: 0px solid black;
+	cursor: pointer;
+}
+
+#sms_restart_button {
+	padding: 3px;
+	width: 20px;
+	height: 20px;
+	background: rgb(254, 130, 32);
+	box-shadow: rgb(150, 150, 150) 0px 1px 5px;
+	font-weight: bold;
+	color: white;
+	float: right;
+	cursor: pointer;
+}
+
+
+#watches {
+	float: left;
+	margin-top: 8px;
+	margin-left: 5px;
+	background: transparent;
+}
+
+.in_watches {
+	display: inline;
+}
+
+
+#didnt_sms {
+	background: transparent;
+	position: absolute;
+	float: left;
+	margin-top: 20px;
+	display: none;
+}
+
+#didnt_sms h2 {
+	font-size: 1.3em;
+	margin-bottom: 4px;
+}
+
+#repeat_sms_code {
+	padding: 8px;
+	background: rgb(254, 130, 32);
+	box-shadow: rgb(150, 150, 150) 0px 1px 5px;
+	font-weight: bold;
+	color: white;
+	width: 200px;
+	text-align: center;
+	margin-top: 10px;
+	border: 0px solid black;
+	cursor: pointer;
+}
+
+#ok_img {
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	margin-left: 10px;
+	margin-top: 13px;
+	display: none;
+}
+
+
+
+/*----------------for tablets----------------*/
+@media screen and (min-width: 768px) and (max-width: 1350px){
+input {
+	border-radius: 0px;
+}	
+	
+#dont_call_info {
+	width: 120px;
+	margin-left: 100px;
+}
+
+#map {
+	height: 350px;
+}
+}
+
+
+
+
+/*---------------------for mobile------------------*/
+@media screen and (max-width: 750px) {
+.delivery_input {
+	margin-top: 10px;
+	width: 100%;
+}
+
+#left_addr {
+	display: none;
+}
+
+#right_addr {
+	width: 100%;
+	padding: 0;
+}
+
+.input_in_order {
+	width: 98%;
+	padding-left: 2%;
+	height: 2.5em;
+}
+
+.delivery_switch {
+	width: 100%;
+	margin-top: 15px;
+}
+
+#deliv_time {
+	margin-top: 50px;
+	width: 100%;
+}
+
+#time_input {
+	width: 98%;
+	padding-left: 2%;
+	height: 2.5em;
+}
+
+#order_addr {
+	width: 100%;
+	padding: 0%;
+}
+
+.input_in_address {
+	height: 2.5em;
+	width: 98%;
+	padding-left: 2%;
+}
+
+.small_input {
+	height: 2.5em;
+	width: 96%;
+	padding-left: 4%;
+	margin-top: 10px;
+}
+
+#sms_verify {
+	position: relative;
+	background: transparent;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	display: none;
+}
+
+#didnt_sms {
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.delivery_h3 {
+	font-size: 1.1em;
+}
+
+#ok_img {
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	margin-left: 70px;
+	margin-top: -68px;
+	display: none;
+}
+
+}

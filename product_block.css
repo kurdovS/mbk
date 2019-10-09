@@ -1,0 +1,317 @@
+#menu {
+	max-width: 1050px;
+	margin: 0 auto;
+}
+
+.product_block {
+	width: 25%;
+	/*border: 1px solid black;*/
+	display: inline-block;
+	position: relative;
+	
+	margin-bottom: 70px;
+}
+
+
+/*-------------------верхняя часть product_block-----------------------*/
+.product_img {
+	float: left;
+	width: 50%;
+}
+
+.product_name {
+	float: left;
+	width: 50%;
+	/*background: yellow;*/
+	font-size: 1em;
+}
+
+
+/*-------------------нижняя часть product_block-----------------------*/
+.del_add_buttons {
+	width: 45%;
+	/*background: gray;*/
+	clear: both;
+	float: left;
+	padding-left: 5%;
+	height: 2em;
+	font-size: 1em;
+	line-height: 2em;
+}
+
+.product_price {
+	float: left;
+	/*background: green;*/
+	width: 50%;
+	text-align: center;
+	font-size: 1.5em;
+	color: #454545;
+}
+
+/*кнопки*/
+.da_buttons {
+	float: left;
+	width: 28px;
+	height: 28px;
+	background: #f20017;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+	border: 0;
+	border-radius: 1px;
+}
+
+.da_buttons:hover {
+	background: #d50017;
+}
+
+.quantity {
+	float: left;
+	width: 40%;
+	text-align: center;
+}
+
+
+/*---блок пустышка для clear:both---*/
+.clear_div {
+	clear: both;
+}
+
+
+/*-----------------------для продуктов с volume--------------*/
+.block_for_product_with_volume {
+	width: 100%;
+	position: absolute;
+	display: none;
+}
+
+.volume_buttons {
+	width: 100%;
+	/*background: pink;*/
+	height: 3em;
+	line-height: 1.7em;
+	margin-top: 59%;
+	cursor: pointer;
+}
+
+.vol_buttons {
+	float: left;
+	border: 2px solid #ffc836;
+	line-height: 1.6em;
+	font-size: 0.88em;
+	width: 11%;
+	height: 20px;
+	margin-top: 1.4em;
+	text-align: center;
+	margin-left: 4%;
+	border-radius: 3px;
+}
+
+
+.category {
+	width: 30%;
+	height: 70px;
+	background: #d50017;
+	color: white;
+	text-align: center;
+	/*vertical-align: bottom;*/
+	font-size: 2em;
+	line-height: 2.5em;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	border-radius: 3px;
+}
+
+.on {
+	background: #ffc836;
+	color: white;
+	font-weight: bold;
+}
+
+.over {
+	background: #ffc836;
+	color: white;
+	font-weight: bold;
+}
+
+
+/*--------------for tablets big--------------*/
+@media screen and (min-width: 1023px) and (max-width: 1350px){
+#menu {
+	width: 90%;
+	margin: 0 auto;
+}	
+
+.vol_buttons {
+	width: 12%;
+}
+	
+
+}
+
+
+
+/*--------------for tablets--------------*/
+@media screen and (max-width: 1023px){
+#menu {
+	width: 95%;
+	margin: 0 auto;
+}	
+	
+.product_block {
+	width: 33.3333333333%;
+	/*border: 1px solid black;*/
+	display: inline-block;
+	position: relative;
+	
+	margin-bottom: 60px;
+}
+
+.category {
+	width: 40%;
+}
+}
+
+
+
+
+/*--------------for mobile--------------*/
+@media screen and (max-width: 750px){
+#menu {
+	width: 100%;
+	margin: 0 auto;
+	
+}	
+	
+.product_block {
+	width: 100%;
+	/*border: 1px solid rgb(87, 94, 102);*/
+	display: block;
+	position: relative;
+	margin-bottom: 40px;
+	/*box-shadow: rgba(0,0,0,0.3) 2px 2px 2px 2px;*/
+	padding: 0%;
+	background: transparent;
+}
+
+.category_div {
+	display: none;
+}
+
+.category {
+	width: 90%;
+	background: transparent;
+	color: #d50017;
+	text-align: center;
+	/*vertical-align: bottom;*/
+	font-size: 1.6em;
+	font-weight: bold;
+	height: 30px;
+	line-height: 1em;
+	margin: 0 auto;
+	margin-top: 20px;
+	padding: 15px 0;
+	margin-bottom: 10px;
+	border-radius: 3px;
+}
+
+/*-------------------верхняя часть product_block-----------------------*/
+.product_img {
+	float: left;
+	width: 30%;
+	margin-left: 5%;
+}
+
+.product_name {
+	float: right;
+	width: 40%;
+	padding-right: 10%;
+	/*background: yellow;*/
+	margin-top: 4%;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+
+/*-------------------нижняя часть product_block-----------------------*/
+.del_add_buttons {
+	width: 50%;
+	/*background: gray;*/
+	clear: both;
+	float: right;
+	padding-left: 5%;
+	height: 2em;
+	font-size: 1em;
+	line-height: 2em;
+}
+
+.product_price {
+	float: left;
+	/*background: green;*/
+	width: 40%;
+	text-align: center;
+	font-size: 1.7em;
+}
+
+/*кнопки*/
+.da_buttons {
+	float: left;
+	width: 30px;
+	height: 100%;
+	background: red;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+	border: 0px;
+}
+
+.quantity {
+	float: left;
+	width: 30%;
+	text-align: center;
+}
+
+
+/*-----------------------для продуктов с volume--------------*/
+.with_volume {
+	border: 1px solid transparent;
+	height: 200px;
+	width: 99%;
+}
+
+.block_for_product_with_volume {
+	width: 100%;
+	position: absolute;
+	display: none;
+}
+
+.volume_buttons {
+	width: 100%;
+	/*background: pink;*/
+	height: 0em;
+	line-height: 1.7em;
+	margin-top: 40%;
+	cursor: pointer;
+}
+
+.vol_buttons {
+	float: left;
+	border: 2px solid #ffc836;
+	line-height: 1.8em;
+	font-size: 0.88em;
+	width: 8%;
+	height: 20px;
+	margin-top: 1.4em;
+	text-align: center;
+	margin-left: 4%;
+	border-radius: 3px;
+}
+
+
+/*---блок пустышка для clear:both---*/
+.clear_div {
+	clear: both;
+}
+
+}
