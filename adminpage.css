@@ -1,0 +1,115 @@
+#header_swapper {
+	background: transparent;
+	width: 80%;
+	height: 80px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	float: left;
+}
+
+#exit_wrap {
+	float: left;
+	width: 10%;
+	height: 80px;
+	background: transprent;
+	box-sizing: border-box;
+	border-left: 1px solid white;
+}
+
+.empty {
+	clear: both;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-family: Helvetica;
+}
+
+#header {
+	width: 100%;
+	height: 80px;
+	background: gray;
+	border-bottom: 1px solid black;
+}
+
+#logo {
+	width: 10%;
+	float: left;
+	text-align: center;
+	font-size: 3em;
+	font-weight: bold;
+	height: 100%;
+	line-height: 2em;
+	box-sizing: border-box;
+	border-right: 1px solid silver;
+	background: #d50017;
+	color: white;
+}
+
+#header_menu {
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+	box-sizing: border-box;
+	padding: 0 10px;
+	height: 80px;
+}
+
+.header_menu_li {
+	list-style: none;
+	display: inline-block;
+	background: white;
+	color: gray;
+	font-size: 1.1em;
+	font-weight: bold;
+	padding: 10px;
+	margin: 0 1%;
+	margin-top: 20px;
+	/*min-width: 10%;*/
+	text-align: center;
+}
+
+#left_menu {
+	width: 10%;
+	min-height: 1000px;
+	float: left;
+	background: white;
+	/*border-right: 1px solid silver;
+	background: yellow;*/
+}
+
+#right_page {
+	width: 89.5%;
+	/*background: pink;*/
+	min-height: 1000px;
+	float: left;
+	border-left: 1px solid silver;
+}
+
+#exit {
+	background: #228B22;
+	color: white;
+	height: 30px;
+	width: 60px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.3em;
+	line-height: 1.8em;
+	border: 2px solid white;
+	margin: 20px auto;
+	cursor: pointer;
+}
+
+::-webkit-scrollbar{
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: gray; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
